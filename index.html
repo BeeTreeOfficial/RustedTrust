@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+    <title>Rusted Trust</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+    <header>
+        <h2>Rusted Trust</h2>
+        <ul class="nav">
+            <li class="inflat ">Главная</li>
+            <li class="inflat ">Правила</li>
+            <li class="inflat ">О нас</li>
+        </ul>
+    </header>
+
+
+    <content>
+        <video autoplay loop muted>
+            <source src="snow.webm">
+        </video>
+        <audio autoplay loop src="No choice but to move forward [cDV98ng-LDg].mp3"></audio>
+
+        <h2>Forge... 1.12.2</h2>
+        <main>
+            <h1 class="inflat  oswald">Приветствую,</h1>
+            <p class="inflat ">Я бы представился, да выдвигаться надо, пошли.</p>
+            <button class="epic oswald" id="copy-ip-button">Иди за мной если жизнь еще дорога.</button>
+        </main>
+        <footer class="oswald ">
+            <event>Начало Работы над проектом
+                <em class="date ">10.01.2025</em>
+            </event>
+            <event>Поиск Хостинга
+                <em class="date ">12.01.2025 - 25.01.2025</em>
+            </event>
+            <event>Создание Сайта
+                <em class="date ">25.01.2025</em>
+            </event>
+            <current>Ситуация на поверхности:</current>
+        </footer>
+
+    </content>
+    <script>
+        document.getElementById('copy-ip-button').addEventListener('click', function () {
+            const ipAddress = "rustedtrust.falixsrv.me"; // Wrap the string in quotes
+            navigator.clipboard.writeText(ipAddress).then(function () {
+                alert("Айпи Успешно Скопирован: " + ipAddress);
+            }).catch(function (error) {
+                console.error("Failed to copy IP address: ", error);
+            });
+        });
+
+        document.addEventListener('click', function () {
+            const video = document.querySelector('video');
+            const audio = document.querySelector('audio');
+
+            if (video.paused) video.play();
+            if (audio.paused) audio.play();
+        });
+
+    </script>
+</body>
+
+</html>
