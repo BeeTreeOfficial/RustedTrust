@@ -40,38 +40,104 @@
             <button class="epic oswald" id="copy-ip-button">Иди за мной если жизнь еще дорога.</button>
         </main>
         <footer class="oswald ">
-            <event>Начало Работы над проектом
-                <em class="date ">10.01.2025</em>
-            </event>
-            <event>Поиск Хостинга
-                <em class="date ">12.01.2025 - 25.01.2025</em>
-            </event>
-            <event>Создание Сайта
-                <em class="date ">25.01.2025</em>
-            </event>
             <current>Ситуация на поверхности:</current>
+            <footer class="scrollable">
+                <event>Обновление Сборки
+                    <em class="date ">26.01.2025</em>
+                </event>
+                <event>Создание Сайта
+                    <em class="date ">25.01.2025</em>
+                </event>
+
+                <event>Поиск Хостинга
+                    <em class="date ">12.01.2025 - 25.01.2025</em>
+                </event>
+
+                <event>Начало Работы над проектом
+                    <em class="date ">10.01.2025</em>
+                </event>
+
+
+
+            </footer>
         </footer>
 
     </content>
-    <script>
-        document.getElementById('copy-ip-button').addEventListener('click', function () {
-            const ipAddress = "rustedtrust.falixsrv.me"; // Wrap the string in quotes
-            navigator.clipboard.writeText(ipAddress).then(function () {
-                alert("Айпи Успешно Скопирован: " + ipAddress);
-            }).catch(function (error) {
-                console.error("Failed to copy IP address: ", error);
-            });
-        });
+    <content>
+        <vlist>
+            <feature>
+                <about>
+                    <h2 class="oswald">Затишье перед бурей.</h2>
+                    Шел теплый август, ты со своими друзьями проводил последние дни лета. Эпл выпустили очередной айфон,
+                    mrbeast уничтожил очередную тонну машин ради просмотров, а твоя мать купила тебе новую демисезонную
+                    куртку как подарок на 18-цати летие. Внезнапно по новостям передают срочную новость - в америке
+                    иссяк
+                    последний источник нефти.
+                    В Твоей стране пока тихо
+                </about>
+                <img src="lastbarrel.jpg">
+            </feature>
 
-        document.addEventListener('click', function () {
-            const video = document.querySelector('video');
-            const audio = document.querySelector('audio');
+            <feature>
+                <about>
+                    <h2 class="oswald">Первые признаки Разложения.</h2>
+                    По всему миру оглашают правило: Мой дом - моя крепость.
+                </about>
+                <img src="stronghold.jpg">
+            </feature>
 
-            if (video.paused) video.play();
-            if (audio.paused) audio.play();
-        });
+            <feature>
+                <about>
+                    <h2 class="oswald">Онемение рук</h2>
+                    Большинство мелких стран, источником доходов которых был туризм распались. Остаются лишь
+                    сверхдержавы.
+                    Ты вместе со своим другом обустраиваете под временное убежище старый подземный сарай. Две масляные
+                    лампы, пару спальныш мешков, вещи личной гигиены, блок питания, рация и телевизор, с потайным
+                    отсеком
+                    полным еды.
+                    Воду вы также взяли с собой.
+                </about>
+                <img src="inside.jpg">
+            </feature>
 
-    </script>
+            <feature>
+                <about>
+                    <h2 class="oswald">Слепота</h2>
+                    Проведя некоторое время в каменном гробу вы решили записать дальнейшее в
+                    подробностях<br><cite>16.07.2026 -
+                        Кончилось Вяленое мясо</cite><br>
+                    <cite>25.07.2026 -
+                        Батарея на радио иссякла</cite><br>
+                    <cite>15.09.2026 -
+                        Ваш сожитель умер от гипертомии.</cite>
+                </about>
+                <img src="bunker.jpg">
+            </feature>
+
+            <feature class="heightcon">
+                <about>
+                    <h2 class="oswald">Клиническая Смерть</h2>
+                    <P>Человечество мертво. Последние его отпрыски зарылись в норы, медленно, но верно, погружаясь в
+                        вечный
+                        сон. Те, кто сумел выжить теряют рассудок в четырёх стенах. Но есть и уставшие терпеть,
+                        молодёжь,
+                        кому не повезло родится за декаду от катастрофы. Они, погрязнувшие в глубоком снегу, в одних
+                        лишь
+                        жилетках без рукавов, падальщики, поедающие плоды трупа цивилизации, частью который они некогда
+                        были. Приятно не знать, что будет завтра, не иметь уверенности в том, что найдешь припасы. Одна
+                        причина: Они не хотят возвращаться под землю, они хотят увидеть тусклый солнечный свет,
+                        попадающий
+                        на их сетчатку в момент последнего дыхания. Это их философия - если умереть, то с честью, если
+                        погибать, то в экспедициях
+                        Впрочем, из-за особенностей глубокого снега их называют просто - Черви. Ты устал, ты теперь один
+                        из
+                        Нас.
+                    </P>
+                </about>
+            </feature>
+        </vlist>
+    </content>
+    <script src="script.js"></script>
 </body>
 
 </html>
