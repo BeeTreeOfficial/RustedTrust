@@ -230,6 +230,7 @@ about {
 img {
   border: solid black 3px;
   aspect-ratio: 16 / 9;
+	width: 30%;
   transition: all 2s ease;
 }
 
